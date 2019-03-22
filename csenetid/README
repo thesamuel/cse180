@@ -1,7 +1,0 @@
-Files placed in this directory will, by virtue of the .htaccess file staff
-has created here, be accessible only to users with a 'csenetid' account.
-
-Note that content in protected directories must be accessed using HTTPS.
-To enforce that, write links like this:
-
-  https://courses.cs.washington.edu/courses/cse351/17au/csenetid/<filename>
