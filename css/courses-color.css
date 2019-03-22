@@ -1,0 +1,75 @@
+// Green:  #005700
+// Purple: #8700A6 (135, 0, 166) 
+// Blue: COLOUR
+
+.calendar .row:last-of-type .sched-header {
+    border-bottom: 2px solid #COLOUR;
+}
+.sched-header {
+    border-bottom: 2px solid #COLOUR;
+    color: #COLOUR;
+}
+
+#header {
+    border-bottom: 3px solid #COLOUR;
+}
+
+#navbar li.current {
+    border-top: 6px solid #COLOUR;
+}
+
+.calendar .row.new-week {
+    border-top: 1px solid #COLOUR;
+}
+
+.calendar .row {
+    border-bottom: 1px solid #COLOUR;
+}
+
+.row.section {
+    /* FIXME TOO */
+    background-color: rgba(0, 0, 139, 0.02);
+}
+
+a.hw-scrolly.badge {
+    border-left: 1px solid #COLOUR;
+    border-top: 1px solid #COLOUR;
+    border-bottom: 1px solid #COLOUR;
+}
+
+.side-arrow:before {
+    border-left-color: #COLOUR;
+}
+
+a:link, a:visited, h1, h2, h3, h4, .subheader, .calendar .row.green, 
+a.hw-scrolly:link, a.hw-scrolly:visited, a.hw-scrolly.badge:hover, .solution:before, .between, .intro-matter {
+    color: #COLOUR;
+}
+
+.side-arrow.today:before {
+    border-left-color: #COLOUR;
+}
+
+a.hw-scrolly.today:link, a.hw-scrolly.today:visited, a.hw-scrolly.badge.today:hover {
+    color: #COLOUR;
+}
+
+a.hw-scrolly.badge.today {
+    border-left: 1px solid #COLOUR;
+    border-top: 1px solid #COLOUR;
+    border-bottom: 1px solid #COLOUR;
+}
+
+
+@media only screen and (max-width: 750px) {
+    #header {
+        border-bottom-style: none;
+    }
+    h1.course a {
+        border-bottom: 3px solid #COLOUR;
+    }
+}
+
+.intro-matter {
+    color: #COLOUR;
+}

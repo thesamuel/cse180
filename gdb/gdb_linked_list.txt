@@ -1,0 +1,38 @@
+gdb tiny_linked_list
+break main
+run
+disas
+break *0x(address of call to printList)
+[example: break *0x400612]
+continue
+
+print topOfArray
+print topOfArray.data
+print topOfArray.next
+
+print headOfList
+print headOfList.data
+print headOfList.next
+
+print *(headOfList.next)
+print *((headOfList.next).next)
+print *(((headOfList.next).next).next)
+print *(headOfList.next.next.next)
+
+print headOfList
+print *headOfList
+print (char) *headOfList
+print (float) *headOfList
+print (struct node) *headOfList
+print ((struct node) *headOfList).next
+print *(((struct node) *headOfList).next)
+
+print topOfArray
+print topOfArray@10
+print *topOfArray@10
+
+Extras:
+l
+[shows source code near current point]
+b 65
+[break at .c file line 65]

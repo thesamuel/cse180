@@ -1,0 +1,58 @@
+// Green:  #005700
+// Purple: #8700A6 (135, 0, 166) 
+// Blue: 00008B
+// Light Blue: 0059FF
+
+.calendar .row:last-of-type .sched-header {
+    border-bottom: 2px solid #0059FF;
+}
+.sched-header {
+    border-bottom: 2px solid #0059FF;
+    color: #0059FF;
+}
+
+#header {
+    border-bottom: 3px solid #0059FF;
+}
+
+#navbar li.current {
+    border-top: 6px solid #0059FF;
+}
+
+.calendar .row.new-week {
+    border-top: 1px solid #0059FF;
+}
+
+.calendar .row {
+    border-bottom: 1px solid #0059FF;
+}
+
+.row.section {
+    background-color: rgba(143,0,166, 0.02);
+}
+
+a.hw-scrolly.badge {
+    border-left: 1px solid #0059FF;
+    border-top: 1px solid #0059FF;
+    border-bottom: 1px solid #0059FF;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.side-arrow:before {
+    border-left-color: #0059FF;
+}
+
+a:link, a:visited, h1, h2, h3, h4, .subheader, .calendar .row.green, 
+a.hw-scrolly:link, a.hw-scrolly:visited, a.hw-scrolly.badge:hover, .solution:before, .between {
+    color: #0059FF;
+}
+
+@media only screen and (max-width: 680px) {
+    #header {
+        border-bottom-style: none;
+    }
+    h1.course a {
+        border-bottom: 3px solid #0059FF;
+    }
+}

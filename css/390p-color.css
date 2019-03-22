@@ -1,0 +1,75 @@
+// Green:  #005700
+// Purple: #8700A6 (135, 0, 166) 
+// Blue: 800000
+
+.calendar .row:last-of-type .sched-header {
+    border-bottom: 2px solid #800000;
+}
+.sched-header {
+    border-bottom: 2px solid #800000;
+    color: #800000;
+}
+
+#header {
+    border-bottom: 3px solid #800000;
+}
+
+#navbar li.current {
+    border-top: 6px solid #800000;
+}
+
+.calendar .row.new-week {
+    border-top: 1px solid #800000;
+}
+
+.calendar .row {
+    border-bottom: 1px solid #800000;
+}
+
+.row.section {
+    /* FIXME TOO */
+    background-color: rgba(0, 0, 139, 0.02);
+}
+
+a.hw-scrolly.badge {
+    border-left: 1px solid #800000;
+    border-top: 1px solid #800000;
+    border-bottom: 1px solid #800000;
+}
+
+.side-arrow:before {
+    border-left-color: #800000;
+}
+
+a:link, a:visited, h1, h2, h3, h4, .subheader, .calendar .row.green, 
+a.hw-scrolly:link, a.hw-scrolly:visited, a.hw-scrolly.badge:hover, .solution:before, .between, .intro-matter {
+    color: #800000;
+}
+
+.side-arrow.today:before {
+    border-left-color: #800000;
+}
+
+a.hw-scrolly.today:link, a.hw-scrolly.today:visited, a.hw-scrolly.badge.today:hover {
+    color: #800000;
+}
+
+a.hw-scrolly.badge.today {
+    border-left: 1px solid #800000;
+    border-top: 1px solid #800000;
+    border-bottom: 1px solid #800000;
+}
+
+
+@media only screen and (max-width: 750px) {
+    #header {
+        border-bottom-style: none;
+    }
+    h1.course a {
+        border-bottom: 3px solid #800000;
+    }
+}
+
+.intro-matter {
+    color: #800000;
+}

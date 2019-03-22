@@ -1,0 +1,34 @@
+*****************************************************
+**CSE 351 Lab Web Style Guide                      **
+**@author Parker DeWilde                           **
+*******************HEADERS***************************
+<h2> -> Lab Name 
+
+** Note ** 
+For legacy reasons, above "panel panel-default" divs, anchor in style of
+<a name="submit"></a>
+** EndNote **
+    
+<h3> -> Major Sections (Resources etc), panel-heading that are not lab name
+	</section>
+	<hr>
+	<div class="unspacesection"></div>
+	<section id="hints"><br>
+	<h3>Hints</h3>
+	
+<h4> -> Subsections (Useful for this lab under resources)
+<h5> -> Sub-subsections
+*****************************************************
+Within <div class="panel-body">:
+The element after a header tag should have the class "afterh"
+
+<h3>Heading Text</h3>
+<p class="afterh">Notice the class</p>
+*******************EMPHASIS**************************
+
+To get reader's attention: style="color:red;" either as span, or for whole element if 
+important paragraph or something
+
+<code>      -> Little in-line references to commands, code, addresses etc
+<pre><code>	-> Code Blocks on own line(s). Will automatically be syntax-highlighted
+			   by highlight.pack.js

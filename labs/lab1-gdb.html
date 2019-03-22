@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>CSE 351 Lab 1 GDB Example</title>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css'>
+    <script src='../js/highlight.pack.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>   
+</head> 
+
+<body>
+<pre><code>
+<b>$ make</b>
+gcc -O -Wall -m64 -g -lm -o btest bits.c btest.c decl.c tests.c
+bits.c: In function ‘print_binary’:
+bits.c:128:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("%d", (x>>i) & 0x1);
+     ^
+bits.c:128:5: warning: incompatible implicit declaration of built-in function ‘printf’
+bits.c:128:5: note: include ‘&lt;stdio.h&gt;’ or provide a declaration of ‘printf’
+bits.c:133:3: warning: incompatible implicit declaration of built-in function ‘printf’
+   printf("\n");
+   ^
+bits.c:133:3: note: include ‘&lt;stdio.h&gt;’ or provide a declaration of ‘printf’
+gcc -O -Wall -m64 -g -Wno-unused-variable -o ptest ptest.c pointer.c
+pointer.c: In function ‘changeValue’:
+pointer.c:130:10: warning: ‘intArray[5]’ is used uninitialized in this function [-Wuninitialized]
+   return intArray[5];
+          ^
+<b>$ gdb ./btest</b>
+GNU gdb (GDB) Red Hat Enterprise Linux 7.11-67.el7
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
+Find the GDB manual and other documentation resources online at:
+&lt;http://www.gnu.org/software/gdb/documentation/&gt;.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./btest...done.
+<b>(gdb) break bitXor</b>
+Breakpoint 1 at 0x400b2e: file bits.c, line 156.
+<b>(gdb) run</b>
+Starting program: /homes/iws/jhsia/lab1/btest 
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-196.el7.x86_64
+Score	Rating	Errors	Function
+ERROR: Test bitAnd(-2147483648[0x80000000],-2147483648[0x80000000]) failed...
+...Gives 2[0x2]. Should be -2147483648[0x80000000]
+
+Breakpoint 1, bitXor (x=-2147483648, y=-2147483648) at bits.c:156
+156	}
+<b>(gdb) print x</b>
+$1 = -2147483648
+<b>(gdb) print /x x</b>
+$2 = 0x80000000
+<b>(gdb) print x^y</b>
+$3 = 0
+<b>(gdb) continue</b>
+Continuing.
+ERROR: Test bitXor failed.
+  Timed out after 10 secs (probably infinite loop)
+ERROR: Test thirdBits() failed...
+...Gives 2[0x2]. Should be 1227133513[0x49249249]
+ERROR: Test sign(-2147483647[0x80000001]) failed...
+...Gives 2[0x2]. Should be -1[0xffffffff]
+ERROR: Test getByte(-2147483648[0x80000000],0[0x0]) failed...
+...Gives 2[0x2]. Should be 0[0x0]
+ERROR: Test fitsBits(-2147483648[0x80000000],1[0x1]) failed...
+...Gives 2[0x2]. Should be 0[0x0]
+ERROR: Test logicalShift(-2147483648[0x80000000],0[0x0]) failed...
+...Gives 2[0x2]. Should be -2147483648[0x80000000]
+ERROR: Test addOK(-2147483648[0x80000000],-2147483648[0x80000000]) failed...
+...Gives 2[0x2]. Should be 0[0x0]
+ERROR: Test invert(-2147483648[0x80000000],0[0x0],0[0x0]) failed...
+...Gives 2[0x2]. Should be -2147483648[0x80000000]
+ERROR: Test bang(-2147483648[0x80000000]) failed...
+...Gives 2[0x2]. Should be 0[0x0]
+ERROR: Test isPower2(-2147483648[0x80000000]) failed...
+...Gives 2[0x2]. Should be 0[0x0]
+Total points: 0/27
+[Inferior 1 (process 178242) exited normally]
+<b>(gdb) quit</b>
+</code></pre>
+
+</body>
+</html>

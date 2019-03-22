@@ -1,0 +1,205 @@
+[
+    {
+        "Num" : "01",
+        "Topic" : "Introduction, Binary",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 1.0-1.10, 2.0-2.1.1 (p. 1-28, 31-39)"
+    },
+    {
+        "Num" : "02",
+        "Topic" : "Memory & Data I",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 2.1.2-2.1.3 (p.39-48)"
+    },
+    {
+        "Num" : "03",
+        "Topic" : "Memory & Data II",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 2.1.4-2.1.9 (p. 49-59)"
+    },
+    {
+        "Num" : "04",
+        "Topic" : "Data III & Integers I",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 2.2-2.2.3 (p. 59-70)"
+    },
+    {
+        "Num" : "05",
+        "Topic" : "Integers II",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 2.2.4-2.3 (p. 70-108)"
+    },
+    {
+        "Num" : "06",
+        "Topic" : "Floating Point I",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 2.4-2.4.3 (p. 108-119)"
+    },
+    {
+        "Num" : "07",
+        "Topic" : "Floating Point II & x86-64 Intro",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 2.4.4-2.5, 3.2-3.4 (p. 120-127, 169-191)"
+    },
+    {
+        "Num" : "08",
+        "Topic" : "x86 Programming I",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 3.5 (p. 191-199)"
+    },
+    {
+        "Num" : "09",
+        "Topic" : "x86 Programming II",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 3.6.0-3.6.5 (p. 200-213)"
+    },
+    {
+        "Num" : "10",
+        "Topic" : "x86 Programming III & The Stack",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 3.6.7-3.6.8 (p. 220-238)"
+    },
+    {
+        "Num" : "11",
+        "Topic" : "The Stack & Procedures",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 3.7.0-3.7.3 (p. 238-248)"
+    },
+    {
+        "Num" : "12",
+        "Topic" : "Procedures & Executables",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 3.7.4-3.7.5, 3.2 (p. 248-255, 169-177)"
+    },
+    {
+        "Num" : "13",
+        "Topic" : "Arrays",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 3.8 (p. 255-265)"
+    },
+    {
+        "Num" : "14",
+        "Topic" : "Structs",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 3.9 (p. 265-276)"
+    },
+    {
+        "Num" : "15",
+        "Topic" : "Buffer Overflow",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 3.10 (p. 276-293)"
+    },
+    {
+        "Num" : "16",
+        "Topic" : "Memory & Caches I",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 6.0, 6.2-6.3 (p. 579-580, 604-614)"
+    },
+    {
+        "Num" : "17",
+        "Topic" : "Memory & Caches II",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 6.4 (p. 614-633)"
+    },
+    {
+        "Num" : "18",
+        "Topic" : "Memory & Caches III",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 6.5-6.7 (p. 633-648)"
+    },
+    {
+        "Num" : "19",
+        "Topic" : "Cache Wrap-Up & System Control Flow",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 8.0-8.1 (p. 722-731)"
+    },
+    {
+        "Num" : "20",
+        "Topic" : "Processes",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 8.2-8.4 (p. 732-756)"
+    },
+    {
+        "Num" : "21",
+        "Topic" : "Virtual Memory I",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 9.0-9.3 (p. 802-810)"
+    },
+    {
+        "Num" : "22",
+        "Topic" : "Virtual Memory II",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 9.4-9.6 (p. 811-825)"
+    },
+    {
+        "Num" : "23",
+        "Topic" : "Virtual Memory Wrap-Up",
+        "File" : 1,
+        "Code" : 1,
+        "Read" : "CSPP: &sect; 9.7 (p. 825-833)"
+    },
+    {
+        "Num" : "24",
+        "Topic" : "Memory Allocation I",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 9.9-9.9.11 (p. 839-853)"
+    },
+    {
+        "Num" : "25",
+        "Topic" : "Memory Allocation II",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 9.9.12-9.10 (p. 854-870)"
+    },
+    {
+        "Num" : "26",
+        "Topic" : "Memory Allocation III",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : "CSPP: &sect; 9.11-9.12 (p. 870-876)"
+    },
+    {
+        "Num" : "27",
+        "Topic" : "Java and C",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : ""
+    },
+    {
+        "Num" : "28",
+        "Topic" : "Parallelism [<em>optional</em>]",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : ""
+    },
+    {
+        "Num" : "29",
+        "Topic" : "Course Wrap-Up",
+        "File" : 1,
+        "Code" : 0,
+        "Read" : ""
+    }
+]
