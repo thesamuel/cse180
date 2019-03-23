@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="464b433d-b87d-4a13-a8b4-f699632d11d0" name="attu" url="http://attu.cs.washington.edu">
+        <fileTransfer host="attu.cs.washington.edu" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/cse/web/homes/sgehman/cse180" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
