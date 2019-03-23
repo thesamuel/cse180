@@ -228,41 +228,11 @@ h5 {
     margin-bottom: 0px;
 }
 
-div.level-one {
-    margin-bottom: 40px; /* don't forget pair */
-    padding-top: 10px;
-    max-width: 1100px;
-}
-
-div.level-one.sm {
+section h2 {
     margin-bottom: 5px;
 }
 
-.container .level-one:last-child {
-    margin-bottom: 0px;
-}
-
-.level-one ul li:first-child {
-    margin-top: -5px;
-}
-
-.level-one ul li:last-child {
-    margin-bottom: -5px;
-}
-
-.level-one ul.spacer li:first-child {
-    margin-top: 0px;
-}
-
-.level-one ul.spacer li:last-child {
-    margin-bottom: 5px;
-}
-
-.level-one ul li {
-    margin-bottom: 5px;
-}
-
-section#schedule {
+section #schedule {
     margin-right: -10px;
 }
 
@@ -806,12 +776,6 @@ samp {
     padding-right: 4px;
 }
 
-section.quickcheck:before {
-    padding-right: 2px;
-    font-size: 12px;
-    content: "QuickCheck:"
-}
-
 div.item-header {
     font-size: 13px;
     display: inline-block;
@@ -863,12 +827,6 @@ div.item-header:after {
     margin-right: -4px;
 }
 
-ul.quickcheck-practice, ul.item, ul.topic-list {
-    padding-left: 0px;
-    display: inline;
-    list-style: none;
-}
-
 ul.topic-list li a.hw-scrolly {
     font-size: 12px;
     font-weight: 700;
@@ -879,8 +837,8 @@ ul.topic-list li {
     margin-left: 0px;
 }
 
-ul.topic-list li:first-child {
-}
+/*ul.topic-list li:first-child {*/
+/*}*/
 
 ul.topic-list li:last-child {
     padding-right: 0px;
@@ -893,23 +851,6 @@ ul.topic-list {
     margin-right: 5px;
     float: right;
     margin-top: 5px;
-}
-
-ul li.practice-it {
-    display: inline;
-    margin-bottom: -5px;
-}
-
-ul li.practice-it:after {
-    content: ", ";
-}
-
-ul li.practice-it:last-child:after {
-    content: "";
-}
-
-.practice-it a samp {
-    font-size: 12px;
 }
 
 ul.item {
@@ -996,6 +937,7 @@ ul.item li a {
     font-size: 160%;
     font-weight: bold;
     max-width: 1100px;
+    margin-bottom: 5px;
 }
 
 .instructor {
@@ -1278,15 +1220,6 @@ section.written-homework {
     margin-top: -10px;
 }
 
-section.exercises,
-section.written-homework,
-section.programming-homework,
-section.programming-checkpoint,
-section.practice-it,
-ul.quickcheck-practice {
-    padding-top: 0px;
-}
-
 .diff-tool {
     margin-left: 15px;
 }
@@ -1389,6 +1322,10 @@ a.hw-scrolly.badge.blue {
 }
 
 @media only screen and (max-width: 750px) {
+    section {
+        margin-right: -40px;
+    }
+
     .project-buttons .btn {
         width: auto;
         margin-bottom: 0px;
@@ -1463,10 +1400,6 @@ a.hw-scrolly.badge.blue {
 
     .row .sched-header {
         display: none;
-    }
-
-    div.level-one {
-        margin-right: -40px;
     }
 
     .scroll-navs div a {

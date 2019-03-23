@@ -15,6 +15,7 @@
     <script src="js/staff.js"></script>
     <script src="js/quarter.js?v4"></script>
 </head>
+
 <body>
 <nav class="navbar navbar-default navbar-fixed-top device-fixed-height" role="navigation">
     <div class="header container">
@@ -37,6 +38,7 @@
         </div>
     </div>
 </nav>
+
 <div class="content container">
     <div class="subheader">
         <script type="text/javascript">document.write(quarter());</script>
@@ -50,137 +52,132 @@
         <!--<div class="level-one">-->
             <!--<ul class="announcements">-->
                 <!--&lt;!&ndash;-->
-                    <!--<li><a target="_blank" href="experience">Fill Out A Survey About Your Background</a></li>-->
-                    <!--<li><a target="_blank" href="documents/partners.pdf">Choose A Partner Option For P1</a></li>-->
+                <!--<li><a target="_blank" href="experience">Fill Out A Survey About Your Background</a></li>-->
+                <!--<li><a target="_blank" href="documents/partners.pdf">Choose A Partner Option For P1</a></li>-->
                 <!--&ndash;&gt;-->
             <!--</ul>-->
         <!--</div>-->
     <!--</section>-->
 
     <section id="information">
-        <div class="level-one">
-            <p> Welcome to CSE 180! We have put the most important links at the top, categorized by what they're for.
-                Please check them out!</p>
-            <div class="button-bar">
-                <h2>Info</h2>
-                <div class="btn-group">
-                    <a href="syllabus#syllabus" class="html btn btn-default btn-lg link-button">Syllabus</a>
-                    <a href="syllabus#policies" class="html btn btn-default btn-lg link-button">Policies</a>
-                    <a href="https://www.cs.washington.edu/lab/software/linuxhomevm"
-                       class="external uw btn btn-default btn-lg link-button">VM Setup</a>
-                    <a href="linux" class="html btn btn-default btn-lg link-button">Linux Tips</a>
-                    <a href="gdb" class="html btn btn-default btn-lg link-button">GDB Tips</a>
-                    <a href="videos" class="external vid btn btn-default btn-lg link-button">Topic Videos</a>
-                    <a href="exams" class="html btn btn-default btn-lg link-button">Exams</a>
-                </div>
+        <p> Welcome to CSE 180! We have put the most important links at the top, categorized by what they're for.
+            Please check them out!</p>
+        <div class="button-bar">
+            <h2>Info</h2>
+            <div class="btn-group">
+                <a href="syllabus#syllabus" class="html btn btn-default btn-lg link-button">Syllabus</a>
+                <a href="syllabus#policies" class="html btn btn-default btn-lg link-button">Policies</a>
+                <a href="https://www.cs.washington.edu/lab/software/linuxhomevm"
+                   class="external uw btn btn-default btn-lg link-button">VM Setup</a>
+                <a href="linux" class="html btn btn-default btn-lg link-button">Linux Tips</a>
+                <a href="gdb" class="html btn btn-default btn-lg link-button">GDB Tips</a>
+                <a href="videos" class="external vid btn btn-default btn-lg link-button">Topic Videos</a>
+                <a href="exams" class="html btn btn-default btn-lg link-button">Exams</a>
             </div>
-            <div style="display: block; min-height: 20px"></div>
-            <div class="button-bar">
-                <h2>Tools</h2>
-                <div class="btn-group">
-                    <a href="msgboard.php" class="external piazza btn btn-default btn-lg link-button">Discussion</a>
-                    <a href="submit.php" class="external canvas btn btn-default btn-lg link-button">Assignments</a>
-                    <a href="grades.php" class="external canvas btn btn-default btn-lg link-button">Gradebook</a>
-                    <a href="https://www.polleverywhere.com/" class="external poll btn btn-default btn-lg link-button">Polls</a>
-                    <a href="https://www.gradescope.com/" class="external grade btn btn-default btn-lg link-button">Gradescope</a>
-                    <a href="feedback.php" class="external mail btn btn-default btn-lg link-button">Feedback</a>
-                </div>
+        </div>
+        <div style="display: block; min-height: 20px"></div>
+        <div class="button-bar">
+            <h2>Tools</h2>
+            <div class="btn-group">
+                <a href="msgboard.php" class="external piazza btn btn-default btn-lg link-button">Discussion</a>
+                <a href="submit.php" class="external canvas btn btn-default btn-lg link-button">Assignments</a>
+                <a href="grades.php" class="external canvas btn btn-default btn-lg link-button">Gradebook</a>
+                <a href="https://www.polleverywhere.com/"
+                   class="external poll btn btn-default btn-lg link-button">Polls</a>
+                <a href="https://www.gradescope.com/" class="external grade btn btn-default btn-lg link-button">Gradescope</a>
+                <a href="feedback.php" class="external mail btn btn-default btn-lg link-button">Feedback</a>
             </div>
         </div>
     </section>
 
 
     <section id="events">
-        <div class="level-one">
-            <h2>Events</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="calendar"></div>
-                </div>
+        <h2>Events</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="calendar"></div>
             </div>
         </div>
     </section>
-    
+
 
     <section id="contact">
         <h2>Asking Questions, Getting Assistance, Giving Feedback</h2>
-        <div class="level-one">
-            <div class="topic-description">
-                It is very important to us that you succeed in CSE 180!
-                Outside of lectures and sections, there are different ways to ask questions or discuss course issues:
-                <ol style="margin-top: 10px">
-                    <li>Visit office hours (see <a href="#events">Events</a> above)!
-                        In addition, if you need extra time or need to discuss something in private, <em>feel free to
-                            email and make an appointment</em>.
-                    </li>
-                    <li>Make a <em>public</em> post about course content on the <a class="external" href="msgboard.php">
-                        <button type="button" class="btn btn-default btn-lg link-button"><img class="link-button"
-                                                                                              src="images/icon_piazza.png"/>
-                            course discussion board
-                        </button>
-                    </a>, where they benefit the whole class.
-                        If other students can answer your question, you may receive a response more quickly than you
-                        would by emailing the course staff.
-                        This is the best way of asking questions about homework, labs, and other class-related topics.
-                        Before posting, please search through the questions that have already been posted in case
-                        someone has already asked the same question.
-                    </li>
-                    <li>Make a <em>private</em> post to just the course staff on the <a class="external"
-                                                                                        href="msgboard.php">
-                        <button type="button" class="btn btn-default btn-lg link-button"><img class="link-button"
-                                                                                              src="images/icon_piazza.png"/>
-                            course discussion board
-                        </button>
-                    </a> with any questions or issues you would prefer to discuss privately.
-                        While you can email <a href="#staff">staff members</a> individually when that makes sense,
-                        contacting the whole staff is generally preferred to get a faster response and to let the whole
-                        staff see what issues students are having.
-                    </li>
-                    <li>Send <a class="external" href="feedback.php">
-                        <button type="button" class="btn btn-default btn-lg link-button"><img class="link-button"
-                                                                                              src="images/mail.png"/>
-                            anonymous feedback
-                        </button>
-                    </a> to the course staff.
-                        The instructor will try to address the issue and share it with others only as appropriate, but
-                        will not have a way to reply to you without addressing the whole class.
-                    </li>
-                </ol>
-            </div>
+        <div class="topic-description">
+            It is very important to us that you succeed in CSE 180!
+            Outside of lectures and sections, there are different ways to ask questions or discuss course issues:
+            <ol style="margin-top: 10px">
+                <li>Visit office hours (see <a href="#events">Events</a> above)!
+                    In addition, if you need extra time or need to discuss something in private, <em>feel free to
+                        email and make an appointment</em>.
+                </li>
+                <li>Make a <em>public</em> post about course content on the <a class="external" href="msgboard.php">
+                    <button type="button" class="btn btn-default btn-lg link-button"><img class="link-button"
+                                                                                          src="images/icon_piazza.png"/>
+                        course discussion board
+                    </button>
+                </a>, where they benefit the whole class.
+                    If other students can answer your question, you may receive a response more quickly than you
+                    would by emailing the course staff.
+                    This is the best way of asking questions about homework, labs, and other class-related topics.
+                    Before posting, please search through the questions that have already been posted in case
+                    someone has already asked the same question.
+                </li>
+                <li>Make a <em>private</em> post to just the course staff on the <a class="external"
+                                                                                    href="msgboard.php">
+                    <button type="button" class="btn btn-default btn-lg link-button"><img class="link-button"
+                                                                                          src="images/icon_piazza.png"/>
+                        course discussion board
+                    </button>
+                </a> with any questions or issues you would prefer to discuss privately.
+                    While you can email <a href="#staff">staff members</a> individually when that makes sense,
+                    contacting the whole staff is generally preferred to get a faster response and to let the whole
+                    staff see what issues students are having.
+                </li>
+                <li>Send <a class="external" href="feedback.php">
+                    <button type="button" class="btn btn-default btn-lg link-button"><img class="link-button"
+                                                                                          src="images/mail.png"/>
+                        anonymous feedback
+                    </button>
+                </a> to the course staff.
+                    The instructor will try to address the issue and share it with others only as appropriate, but
+                    will not have a way to reply to you without addressing the whole class.
+                </li>
+            </ol>
         </div>
     </section>
-    
+
 
     <section id="staff">
-        <div class="level-one">
-            <h2>Course Staff</h2>
-            <!--#include virtual="staff.html" -->
-        </div>
+        <h2>Course Staff</h2>
+        <!--#include virtual="staff.html" -->
     </section>
-    
+
 
     <section id="schedule">
-        <div class="level-one">
-            <h2 style="float: left">Schedule</h2>
-            <ul class="slides topic-list">
-                <li link="week1">Binary</li>
-                <li link="week1">Memory &amp; Data</li>
-                <li link="week2">Integers</li>
-                <li link="week3">Floating Point</li>
-                <li link="week3">x86 Programming</li>
-                <li link="week4">The Stack &amp; Procedures</li>
-                <li link="week5">Executables</li>
-                <li link="week5">Arrays</li>
-                <li link="week5">Structs</li>
-                <li link="week6">Buffer Overflows</li>
-                <li link="week6">Caches</li>
-                <li link="week8">Processes</li>
-                <li link="week8">Virtual Memory</li>
-                <li link="week10">Memory Allocation</li>
-                <li link="week11">Java and C</li>
-            </ul>
-        </div>
-        <div class="calendar level-one">
+        <h2 style="float: left">Schedule</h2>
+        <ul class="slides topic-list">
+            <li link="week1">Binary</li>
+            <li link="week1">Memory &amp; Data</li>
+            <li link="week2">Integers</li>
+            <li link="week3">Floating Point</li>
+            <li link="week3">x86 Programming</li>
+            <li link="week4">The Stack &amp; Procedures</li>
+            <li link="week5">Executables</li>
+            <li link="week5">Arrays</li>
+            <li link="week5">Structs</li>
+            <li link="week6">Buffer Overflows</li>
+            <li link="week6">Caches</li>
+            <li link="week8">Processes</li>
+            <li link="week8">Virtual Memory</li>
+            <li link="week10">Memory Allocation</li>
+            <li link="week11">Java and C</li>
+        </ul>
+
+        <!--Keep this here because no "week1" anchor is generated-->
+        <div class id="week1"></div>
+
+        <div class="calendar">
             <div class="scroll-navs"></div>
             <div class="row">
                 <div class="sched-lecnum sched-header">#</div>
