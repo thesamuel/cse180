@@ -167,13 +167,9 @@ ul.announcements li {
 }
 
 .container {
-    /*background: #fff;*/
     margin: 15px auto 15px;
-    padding: 0 15px 15px;
-    padding-right: 155px;
-    padding-top: 20px;
+    padding: 20px 155px 15px 15px;
     width: 100%;
-    /*width: 950px; */
     border: 5px solid transparent;
 }
 
@@ -1024,7 +1020,6 @@ button.link-button.small {
 
 .cse-logo {
     float: left;
-    margin-top: -4px;
     margin-right: 15px;
     display: inline-block;
     background-image: url("../images/logo.png");
