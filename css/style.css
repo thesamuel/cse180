@@ -958,6 +958,7 @@ h2#home {
 }
 
 section {
+    max-width: 1100px;
     margin-bottom: 30px;
 }
 
