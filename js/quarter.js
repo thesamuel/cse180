@@ -16,7 +16,7 @@ Course.name = "CSE 180";
 Course.canvas = "";
 
 Course.setSchedule("04/01/19", "MWF", "R", 10);
-Course.noLetter = true;
+Course.noLetter = false;
 
 Course.Holidays.addHoliday("Memorial Day", "05/27/19");
 

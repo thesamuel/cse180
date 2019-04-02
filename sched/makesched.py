@@ -17,11 +17,15 @@ lab_i = 0
 hw_i = 0
 
 
-def include_file_str(day_str, day_num, path_suffix=""):
-    return f'\t\t<!--#include virtual="{day_str}s/{day_num}/{path_suffix}" -->\n'
+def include_files(day_str, day_num, path_suffix=""):
+    return f'<!--#include virtual="{day_str}s/{day_num}/{path_suffix}" -->'
 
 
-def write_row(f, day):
+def reading(reading_str):
+    return f'<div class="read">{reading_str}</div>'
+
+
+def make_row(day):
     global lec_i, section_i, lab_i, hw_i
     day_str = ""
     if "lec" in day:
@@ -33,59 +37,34 @@ def write_row(f, day):
         day_str = "section"
         section_i += 1
 
-    # start new schedule row
-    f.write('<div class="row">\n')
-    f.write('\t<script>Course.nextDate();</script>\n')
+    row_html = f"""
+    <div class="row">
+        <script>Course.nextDate();</script>\n
+        <div class="sched-topic pandhw" {day_str}="{day_obj["Num"]}">
+            {day_obj["Topic"]}
+            {include_files(day_str, day_obj["Num"]) if day_obj["File"] else ""}
+            {include_files(day_str, day_obj["Num"], "code/") if day_obj["Code"] else ""}
+            {reading(day_obj["Read"]) if day_obj["Read"] else ""}
+        </div>
+    """
 
-    # topic (and directory location)
-    f.write(f'\t<div class="sched-topic pandhw" {day_str}="{day_obj["Num"]}">\n')
-    f.write(f'\t\t{day_obj["Topic"]}\n')
-
-    # link files
-    if day_obj["File"]:
-        f.write(include_file_str(day_str, day_obj["Num"]))
-
-    # link code
-    if day_obj["Code"]:
-        f.write(include_file_str(day_str, day_obj["Num"], "code/"))
-
-    # lecture reading
-    if day_obj["Read"]:
-        f.write('\t\t<div class="read">' + day_obj["Read"] + '</div>\n')
-
-    # close lecture div
-    f.write('\t</div>\n')
-
-    # lab & hw columns
-    f.write('\t<div class="sched-projects middle">\n')
+    # Add to challenge column
+    row_html += '\t<div class="sched-documents middle">\n'
     for i in range(0, day.count("lab")):
-        labObj = labs[lab_i]
-        labObj["Num"] = re.sub(' ', '', re.sub('[,\/]', '-', labObj["Title"]));
-        # linkTitle = labObj["Title"].replace(/[ ,\/]/g, "-");
-        f.write(
-            '\t\t<section class="exercises" type="lab" title="' + labObj["Title"] + '" lnk="' +
-            labObj["Link"] + '" number="' + labObj["Num"] + '" due="' + labObj["Due"] + '"')
-        if not labObj["Active"]:
-            f.write(' notready')
-        f.write('></section><div style="min-height: 5px"></div>\n')
+        lab_obj = labs[lab_i]
+        lab_obj["Num"] = re.sub(' ', '', re.sub('[,/]', '-', lab_obj["Title"]))
+        # linkTitle = lab_obj["Title"].replace(/[ ,\/]/g, "-");
+        row_html += '\t\t<section class="exercises" type="lab" title="' + lab_obj["Title"] + '" lnk="' + lab_obj["Link"] + '" number="' + lab_obj["Num"] + '" due="' + lab_obj["Due"] + '"'
+        if not lab_obj["Active"]:
+            row_html += ' notready'
+        row_html += '></section><div style="min-height: 5px"></div>\n'
         lab_i += 1
-    f.write('\t</div>\n')
-    f.write('\t<div class="sched-homework middle">\n')
-    for i in range(0, day.count("hw")):
-        hwObj = hws[hw_i]
-        hwObj["Num"] = re.sub('[ ,\/]', '-', hwObj["Title"]);
-        f.write(
-            '\t\t<section class="exercises" type="hw" title="' + hwObj["Title"] + '" lnk="' +
-            hwObj["Link"] + '" number="' + hwObj["Num"] + '" due="' + hwObj["Due"] + '"')
-        if not hwObj["Active"]:
-            f.write(' notready')
-        f.write('></section><div style="min-height: 5px"></div>\n')
-        hw_i += 1
-    f.write('\t</div>\n')
+    row_html += '\t</div>\n'
 
-    # close schedule row
-    f.write('</div>\n')
-    return
+    # Close schedule row
+    row_html += '</div>\n'
+
+    return row_html
 
 
 with open(SCHEDULE_PATH, 'w') as f:
@@ -98,4 +77,5 @@ with open(SCHEDULE_PATH, 'w') as f:
             elif "exam" in day:
                 f.write('<script>Course.nextExam();</script>\n')
             else:
-                write_row(f, day)
+                row = make_row(day)
+                f.write(row)
