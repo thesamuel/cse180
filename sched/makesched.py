@@ -17,12 +17,8 @@ lab_i = 0
 hw_i = 0
 
 
-def include_files(day_str, day_num, path_suffix=""):
+def make_files(day_str, day_num, path_suffix=""):
     return f'<!--#include virtual="{day_str}s/{day_num}/{path_suffix}" -->'
-
-
-def reading(reading_str):
-    return f'<div class="read">{reading_str}</div>'
 
 
 def make_row(day):
@@ -32,37 +28,45 @@ def make_row(day):
         day_obj = lectures[lec_i]
         day_str = "lecture"
         lec_i += 1
-    if "sec" in day:
+    elif "sec" in day:
         day_obj = sections[section_i]
         day_str = "section"
         section_i += 1
+    else:
+        raise RuntimeError("Day must be a section or lecture")
 
-    row_html = f"""
+    row_html = f'''
     <div class="row">
         <script>Course.nextDate();</script>\n
         <div class="sched-topic pandhw" {day_str}="{day_obj["Num"]}">
             {day_obj["Topic"]}
-            {include_files(day_str, day_obj["Num"]) if day_obj["File"] else ""}
-            {include_files(day_str, day_obj["Num"], "code/") if day_obj["Code"] else ""}
-            {reading(day_obj["Read"]) if day_obj["Read"] else ""}
+            {make_files(day_str, day_obj["Num"]) if day_obj["File"] else ""}
+            {make_files(day_str, day_obj["Num"], "code/") if day_obj["Code"] else ""}
+            {f'<div class="read">{day_obj["Read"]}</div>' if day_obj["Read"] else ""}
         </div>
-    """
+        <div class="sched-documents middle">
+    '''
 
-    # Add to challenge column
-    row_html += '\t<div class="sched-documents middle">\n'
-    for i in range(0, day.count("lab")):
+    # Add items to challenge column
+    for i in range(day.count("lab")):
         lab_obj = labs[lab_i]
         lab_obj["Num"] = re.sub(' ', '', re.sub('[,/]', '-', lab_obj["Title"]))
-        # linkTitle = lab_obj["Title"].replace(/[ ,\/]/g, "-");
-        row_html += '\t\t<section class="exercises" type="lab" title="' + lab_obj["Title"] + '" lnk="' + lab_obj["Link"] + '" number="' + lab_obj["Num"] + '" due="' + lab_obj["Due"] + '"'
-        if not lab_obj["Active"]:
-            row_html += ' notready'
-        row_html += '></section><div style="min-height: 5px"></div>\n'
-        lab_i += 1
-    row_html += '\t</div>\n'
 
-    # Close schedule row
-    row_html += '</div>\n'
+        row_html += f'''
+                <section class="exercises" type="lab" title="{lab_obj["Title"]}" 
+                    lnk="{lab_obj["Link"]}" number="{lab_obj["Num"]}" due="{lab_obj["Due"]}" 
+                    {'' if lab_obj["Active"] else 'notready'}>
+                </section>
+                <div style="min-height: 5px"></div>
+        '''
+
+        lab_i += 1
+
+    # Close divs
+    row_html += '''
+        </div>
+    </div>
+    '''
 
     return row_html
 
