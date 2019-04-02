@@ -5,7 +5,7 @@
       <paths name="attu">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="https://homes.cs.washington.edu/~sgehman/cse180/" />
+            <mapping deploy="/dev" local="$PROJECT_DIR$" web="https://homes.cs.washington.edu/~sgehman/cse180/" />
           </mappings>
         </serverdata>
       </paths>
