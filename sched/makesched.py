@@ -17,6 +17,10 @@ lab_i = 0
 hw_i = 0
 
 
+def include_file_str(day_str, day_num, path_suffix=""):
+    return f'\t\t<!--#include virtual="{day_str}s/{day_num}/{path_suffix}" -->\n'
+
+
 def write_row(f, day):
     global lec_i, section_i, lab_i, hw_i
     day_str = ""
@@ -31,54 +35,53 @@ def write_row(f, day):
 
     # start new schedule row
     f.write('<div class="row">\n')
-    f.write('    <script>Course.nextDate();</script>\n')
+    f.write('\t<script>Course.nextDate();</script>\n')
 
     # topic (and directory location)
-    f.write('    <div class="sched-topic pandhw" ' + day_str + '="' + day_obj["Num"] + '">\n')
-    f.write('        ' + day_obj["Topic"] + '\n')
+    f.write(f'\t<div class="sched-topic pandhw" {day_str}="{day_obj["Num"]}">\n')
+    f.write(f'\t\t{day_obj["Topic"]}\n')
 
     # link files
     if day_obj["File"]:
-        f.write('        <!--#include virtual="' + day_str + 's/' + day_obj["Num"] + '/" -->\n')
+        f.write(include_file_str(day_str, day_obj["Num"]))
 
     # link code
     if day_obj["Code"]:
-        f.write(
-            '        <!--#include virtual="' + day_str + 's/' + day_obj["Num"] + '/code/" -->\n')
+        f.write(include_file_str(day_str, day_obj["Num"], "code/"))
 
     # lecture reading
     if day_obj["Read"]:
-        f.write('        <div class="read">' + day_obj["Read"] + '</div>\n')
+        f.write('\t\t<div class="read">' + day_obj["Read"] + '</div>\n')
 
     # close lecture div
-    f.write('    </div>\n')
+    f.write('\t</div>\n')
 
     # lab & hw columns
-    f.write('    <div class="sched-projects middle">\n')
+    f.write('\t<div class="sched-projects middle">\n')
     for i in range(0, day.count("lab")):
         labObj = labs[lab_i]
         labObj["Num"] = re.sub(' ', '', re.sub('[,\/]', '-', labObj["Title"]));
         # linkTitle = labObj["Title"].replace(/[ ,\/]/g, "-");
         f.write(
-            '        <section class="exercises" type="lab" title="' + labObj["Title"] + '" lnk="' +
+            '\t\t<section class="exercises" type="lab" title="' + labObj["Title"] + '" lnk="' +
             labObj["Link"] + '" number="' + labObj["Num"] + '" due="' + labObj["Due"] + '"')
         if not labObj["Active"]:
             f.write(' notready')
         f.write('></section><div style="min-height: 5px"></div>\n')
         lab_i += 1
-    f.write('    </div>\n')
-    f.write('    <div class="sched-homework middle">\n')
+    f.write('\t</div>\n')
+    f.write('\t<div class="sched-homework middle">\n')
     for i in range(0, day.count("hw")):
         hwObj = hws[hw_i]
         hwObj["Num"] = re.sub('[ ,\/]', '-', hwObj["Title"]);
         f.write(
-            '        <section class="exercises" type="hw" title="' + hwObj["Title"] + '" lnk="' +
+            '\t\t<section class="exercises" type="hw" title="' + hwObj["Title"] + '" lnk="' +
             hwObj["Link"] + '" number="' + hwObj["Num"] + '" due="' + hwObj["Due"] + '"')
         if not hwObj["Active"]:
             f.write(' notready')
         f.write('></section><div style="min-height: 5px"></div>\n')
         hw_i += 1
-    f.write('    </div>\n')
+    f.write('\t</div>\n')
 
     # close schedule row
     f.write('</div>\n')
