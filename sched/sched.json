@@ -1,83 +1,92 @@
 [
-    {
-	"Num" : 1,
-        "Week" : ["lec",
-		  "sec",
-		  "lec hw"]
-    },
-    {
-	"Num" : 2,
-        "Week" : ["lec lab",
-		  "lec hw",
-		  "sec",
-		  "lec"]
-    },
-    {
-	"Num" : 3,
-        "Week" : ["lec lab",
-		  "lec",
-		  "sec",
-		  "lec lab"]
-    },
-    {
-	"Num" : 4,
-        "Week" : ["lec",
-		  "lec",
-		  "sec",
-		  "lec hw"]
-    },
-    {
-	"Num" : 5,
-        "Week" : ["lec",
-		  "lec",
-		  "sec",
-		  "lec lab"]
-    },
-    {
-	"Num" : 6,
-        "Week" : ["exam",
-		  "lec",
-		  "sec hw",
-		  "lec hw"]
-    },
-    {
-	"Num" : 7,
-        "Week" : ["lec",
-		  "lec",
-		  "sec lab",
-		  "holiday"]
-    },
-    {
-	"Num" : 8,
-        "Week" : ["lec",
-		  "lec",
-		  "sec",
-		  "lec hw"]
-    },
-    {
-	"Num" : 9,
-        "Week" : ["lec",
-		  "lec",
-		  "holiday",
-		  "holiday"]
-    },
-    {
-	"Num" : 10,
-        "Week" : ["lec lab",
-		  "lec",
-		  "sec",
-		  "lec hw"]
-    },
-    {
-	"Num" : 11,
-        "Week" : ["lec",
-		  "lec",
-		  "sec",
-		  "lec lab"]
-    },
-    {
-        "Num" : 12,
-        "Week" : ["holiday",
-                  "exam"]
-    }
+  {
+    "Num": 1,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 2,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 3,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 4,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 5,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 6,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 7,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 8,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 9,
+    "Week": [
+      "holiday",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 10,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  }
 ]
