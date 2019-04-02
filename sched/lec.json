@@ -1,8 +1,8 @@
 [
     {
         "Num" : "01",
-        "Topic" : "Introduction to the Course",
-        "File" : 0,
+        "Topic" : "Introduction, Binary",
+        "File" : 1,
         "Code" : 0,
         "Read" : "CSPP: &sect; 1.0-1.10, 2.0-2.1.1 (p. 1-28, 31-39)"
     },
