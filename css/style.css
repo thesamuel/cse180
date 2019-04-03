@@ -384,6 +384,26 @@ a.skillitup:before {
     margin-right: 2px;
 }
 
+a.anaconda:before {
+    content: url('../images/icon_anaconda.png');
+    transform: scale(0.8) translateY(5px);
+    -webkit-transform: scale(0.8) translateY(5px);
+    display: inline-block;
+    target-name: new;
+    target-new: tab;
+    margin-right: 2px;
+}
+
+a.python:before {
+    content: url('../images/icon_python.png');
+    transform: scale(0.8) translateY(5px);
+    -webkit-transform: scale(0.8) translateY(5px);
+    display: inline-block;
+    target-name: new;
+    target-new: tab;
+    margin-right: 2px;
+}
+
 a.jar:before {
     content: url('../images/icon_jar.gif');
     -webkit-transform: scale(0.8) translateY(5px);

@@ -7,9 +7,6 @@
           <mappings>
             <mapping deploy="/dev" local="$PROJECT_DIR$" web="https://homes.cs.washington.edu/~sgehman/cse180/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/sched" />
-          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
