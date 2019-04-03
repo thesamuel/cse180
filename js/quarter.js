@@ -15,7 +15,8 @@ var qtr = function () {
 Course.name = "CSE 180";
 Course.canvas = "";
 
-Course.setSchedule("04/01/19", "MWF", "R", 10);
+Course.setSchedule("04/01/19", "MWF", "R", 10,
+    "06/07/19");
 Course.noLetter = false;
 
 Course.Holidays.addHoliday("Memorial Day", "05/27/19");

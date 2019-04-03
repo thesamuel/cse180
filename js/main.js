@@ -155,7 +155,11 @@ var Course = {
             });
         }
 
-        Course.lastDate = lastDate || (Course.startDate.clone().add({'weeks': weeks}));
+        if (lastDate != null) {
+            Course.lastDate = moment(lastDate, "MM-DD-YY");
+        } else {
+            Course.lastDate = Course.startDate.clone().add({'weeks': weeks});
+        }
     },
     addDates: function(){
         if (Course.specialAddDates) {
