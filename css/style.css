@@ -374,6 +374,16 @@ table.office-hours tr td.oo-person {
     width: 66%;
 }
 
+a.skillitup:before {
+    content: url('../images/icon_skillitup.png');
+    transform: scale(0.8) translateY(5px);
+    -webkit-transform: scale(0.8) translateY(5px);
+    display: inline-block;
+    target-name: new;
+    target-new: tab;
+    margin-right: 2px;
+}
+
 a.jar:before {
     content: url('../images/icon_jar.gif');
     -webkit-transform: scale(0.8) translateY(5px);
@@ -979,7 +989,6 @@ img.link-button {
 button.link-button, a.btn.link-button {
     font-size: 10pt;
     padding: 1px 5px;
-    padding-top: 3px;
 }
 
 .button-bar button.link-button, .button-bar a.btn.link-button {
