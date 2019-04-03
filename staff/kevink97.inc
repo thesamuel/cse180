@@ -1,5 +1,5 @@
 <div class="staff-blurb-title">
-    Staff Mini-Bio: Maas
+    Staff Mini-Bio: Kevin
 </div>
 <div class="staff-blurb-content">
     <b>WHERE DID YOU GROW UP? WHAT WAS YOUR ACADEMIC PATH?</b><br>
