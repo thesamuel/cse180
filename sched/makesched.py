@@ -8,13 +8,11 @@ sched = json.load(open('sched.json', 'r'))
 lectures = json.load(open('lec.json', 'r'))
 sections = json.load(open('sec.json', 'r'))
 labs = json.load(open('lab.json', 'r'))
-hws = json.load(open('hw.json', 'r'))
 
 # list counters
 lec_i = 0
 section_i = 0
 lab_i = 0
-hw_i = 0
 
 
 def make_files(day_str, day_num, path_suffix=""):
@@ -22,7 +20,7 @@ def make_files(day_str, day_num, path_suffix=""):
 
 
 def make_row(day):
-    global lec_i, section_i, lab_i, hw_i
+    global lec_i, section_i, lab_i
     day_str = ""
     if "lec" in day:
         day_obj = lectures[lec_i]
@@ -42,7 +40,7 @@ def make_row(day):
             {day_obj["Topic"]}
             {make_files(day_str, day_obj["Num"]) if day_obj["File"] else ""}
             {make_files(day_str, day_obj["Num"], "code/") if day_obj["Code"] else ""}
-            {f'<div class="read">{day_obj["Read"]}</div>' if day_obj["Read"] else ""}
+            {f'<div class="read">{day_obj["Read"]}</div>' if "Read" in day_obj and day_obj["Read"] else ""}
         </div>
         <div class="sched-documents middle">
     '''

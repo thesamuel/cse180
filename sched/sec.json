@@ -1,72 +1,8 @@
 [
   {
     "Num": "01",
-    "Topic": "Binary, Programming in C",
-    "File": 1,
-    "Code": 1,
-    "Read": ""
-  },
-  {
-    "Num": "02",
-    "Topic": "Pointers, Bitwise Operators",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "03",
-    "Topic": "Integers, Floating Point",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "04",
-    "Topic": "x86 Assembly, GDB",
-    "File": 1,
-    "Code": 1,
-    "Read": ""
-  },
-  {
-    "Num": "05",
-    "Topic": "Midterm Review",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "06",
-    "Topic": "Array and Structs, Buffer Overflow",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "07",
-    "Topic": "Caches",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "08",
-    "Topic": "Caches & Processes",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "09",
-    "Topic": "Memory Allocation",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
-  },
-  {
-    "Num": "10",
-    "Topic": "Final Review",
-    "File": 1,
-    "Code": 0,
-    "Read": ""
+    "Topic": "Installing Anaconda",
+    "File": 0,
+    "Code": 0
   }
 ]
