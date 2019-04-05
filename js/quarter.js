@@ -57,8 +57,8 @@ Course.OfficeHours = {
             {
                 from: "12:00pm",
                 to: "1:00pm",
-                who: "ryanfok",
-                location: "CSE2 214",
+                who: "maas",
+                location: "CSE 214",
                 exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             }
         ],
