@@ -7,5 +7,86 @@
       "sec",
       "lec"
     ]
+  },
+  {
+    "Num": 2,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 3,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 4,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 5,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 6,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 7,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 8,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 9,
+    "Week": [
+      "holiday",
+      "lec",
+      "sec",
+      "lec"
+    ]
+  },
+  {
+    "Num": 10,
+    "Week": [
+      "lec",
+      "lec",
+      "sec",
+      "lec"
+    ]
   }
 ]
