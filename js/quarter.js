@@ -50,7 +50,7 @@ Course.OfficeHours = {
                 to: "4:00pm",
                 who: "ryanfok",
                 location: "CSE2 152",
-                exceptions: ["05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             }
         ],
         tuesday: [
@@ -59,7 +59,7 @@ Course.OfficeHours = {
                 to: "1:00pm",
                 who: "ryanfok",
                 location: "CSE2 214",
-                exceptions: ["05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             }
         ],
         wednesday: [
@@ -68,14 +68,14 @@ Course.OfficeHours = {
                 to: "3:30pm",
                 who: "tperrier",
                 location: "CSE2 276",
-                exceptions: ["05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             },
             {
                 from: "12:30pm",
                 to: "2:00pm",
                 who: "kevink97",
                 location: "CSE2 153",
-                exceptions: ["05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             }
         ],
         thursday: [
@@ -83,7 +83,7 @@ Course.OfficeHours = {
                 from: "12:30pm",
                 to: "1:30pm",
                 who: "sgehman",
-                exceptions: ["05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             }
         ],
         friday: [
@@ -92,7 +92,7 @@ Course.OfficeHours = {
                 to: "2:00pm",
                 who: "nowei",
                 location: "CSE 4th Floor Landing",
-                exceptions: ["05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "05/27/19"]
             }
         ],
         saturday: [],
