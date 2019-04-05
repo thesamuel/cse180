@@ -25,12 +25,12 @@ var Course = {
     URL: window.location.href.replace(/[\/]*#.*/, ""),
     onHash: function(hash) {
         var url = Course.URL.split("/"); 
-        if (/[0-9][0-9](sp|su|au|wi)/.exec(url[url.length - 1])) {
+        // if (/[0-9][0-9](sp|su|au|wi)/.exec(url[url.length - 1])) {
             Course.$.getScript("js/polyfill.js");
-        }
-        else {
-            Course.$.getScript("../js/polyfill.js");
-        }
+        // }
+        // else {
+        //     Course.$.getScript("../js/polyfill.js");
+        // }
         try {
             if (hash === "home" || hash === "") {
                 window.scrollTo(0, 0);
