@@ -1,0 +1,6 @@
+Options +Indexes
+IndexOptions SuppressSize SuppressHTMLPreamble SuppressRules SuppressDescription SuppressIcon NameWidth=25
+HeaderName header.html
+ReadmeName ../../code-listings/footer.html
+IndexIgnore header.html
+IndexOrderDefault Ascending Date 

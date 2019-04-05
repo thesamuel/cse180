@@ -1,0 +1,7 @@
+Options +Indexes
+IndexOptions SuppressSize SuppressHTMLPreamble SuppressRules SuppressLastModified SuppressIcon SuppressDescription
+HeaderName header.html
+ReadmeName ../lecture-listings/footer.html
+IndexIgnore header.html code
+IndexStyleSheet css/lecture-listing.css
+IndexOrderDefault Descending Name
