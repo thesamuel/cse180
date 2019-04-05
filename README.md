@@ -1,12 +1,14 @@
 # CSE 180 Website
-
-## Files to Edit
-`js/`
-  - `quarter.js` allows you to specify office hours, holidays, staff members, and general course details
-  
-`sched/`
-  - `sched.json` specifies the schedule outline
-  - `lab.json` specifies lab due dates (can use for approx challenge dates)
-  - `lec.json` specifies lecture dates (can use for activities)
-  - `sec.json` specifies section dates
-  - `hw.json` specifies homework due dates (can ignore)
+# Office Hours
+ - Events on website: js/quarter.js
+ - Room reservations: https://reserve.cs.washington.edu/room/day.php
+ 
+# Upload Section Materials
+ - section materials: sections/##/
+ - update sched/sec.json
+   - Set "File" to 1/0 to show/hide files
+   - Set "Code" to 1/0 to show/hide code
+   - run `$ python makesched.py`
+   
+# Upload Lecture Materials
+Same conventions as Section Materials, except use "lec" and "lecture" where appropriate
