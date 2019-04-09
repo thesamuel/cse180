@@ -80,8 +80,8 @@ Course.OfficeHours = {
         ],
         thursday: [
             {
-                from: "12:30pm",
-                to: "1:30pm",
+                from: "1:30pm",
+                to: "3:30pm",
                 who: "sgehman",
                 exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
             }
