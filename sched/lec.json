@@ -19,9 +19,10 @@
   },
   {
     "Num": "04",
-    "Topic": "TBA",
-    "File": 0,
-    "Code": 0
+    "Topic": "Jupyter Notebooks",
+    "File": 1,
+    "Code": 0,
+    "Read": "Please right click and save each file!"
   },
   {
     "Num": "05",
