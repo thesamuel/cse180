@@ -83,8 +83,8 @@ Course.OfficeHours = {
                 from: "1:30pm",
                 to: "3:30pm",
                 who: "sgehman",
-                location: "CSE 3rd Floor Landing",
-                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "05/27/19"]
+                location: "CSE 3rd Floor Breakout",
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "04/05/19", "04/25/19", "05/27/19"]
             }
         ],
         friday: [
@@ -92,7 +92,7 @@ Course.OfficeHours = {
                 from: "11:00am",
                 to: "2:00pm",
                 who: "nowei",
-                location: "CSE 4th Floor Landing",
+                location: "CSE 4th Floor Breakout",
                 exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "05/27/19"]
             }
         ],
