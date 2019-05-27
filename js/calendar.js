@@ -197,10 +197,12 @@ function add_extra_events(cal) {
         var ev = Course.Events[i];
         var from = moment(ev.start, "MM/DD/YY h:mma"); 
         var to = moment(ev.end, "MM/DD/YY h:mma"); 
+        var who = ev.who;
         var setup = {
             DTSTART: from.toDate(),
             DTEND: to.toDate(),
             SUMMARY: ev.name,
+            DESCRIPTION: who,
             LOCATION: ev.location
         }
 

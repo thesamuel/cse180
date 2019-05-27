@@ -7,7 +7,7 @@
   },
   {
     "Num": "02",
-    "Topic": "Introduction to Challenges",
+    "Topic": "Introduction to Challenge 1",
     "File": 1,
     "Code": 0
   },
@@ -26,7 +26,7 @@
   },
   {
     "Num": "05",
-    "Topic": "Learner and Teacher Activity",
+    "Topic": "Learn and Teach Activity",
     "File": 0,
     "Code": 0
   },
@@ -38,14 +38,14 @@
   },
   {
     "Num": "07",
-    "Topic": "TBA",
+    "Topic": "Challenge 1 or 2 - Work Time",
     "File": 0,
     "Code": 0
   },
   {
     "Num": "08",
-    "Topic": "TBA",
-    "File": 0,
+    "Topic": "Learn and Teach Activity / Data Science Level 3",
+    "File": 1,
     "Code": 0
   },
   {
@@ -56,8 +56,8 @@
   },
   {
     "Num": "10",
-    "Topic": "TBA",
-    "File": 0,
+    "Topic": "Challenge Preparation",
+    "File": 1,
     "Code": 0
   },
   {

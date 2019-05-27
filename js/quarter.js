@@ -93,7 +93,7 @@ Course.OfficeHours = {
                 to: "2:00pm",
                 who: "nowei",
                 location: "CSE 4th Floor Breakout",
-                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "05/27/19"]
+                exceptions: ["04/01/19", "04/02/19", "04/03/19", "04/04/19", "05/24/19", "05/27/19"]
             }
         ],
         saturday: [],
@@ -101,4 +101,13 @@ Course.OfficeHours = {
     }
 };
 
-Course.Events = [];
+Course.Events = [
+    {
+        name: "Office Hours",
+        start: "05/31/19 05:00pm",
+        end: "05/31/19 08:00pm",
+        who: "nowei",
+        location: "CSE 4th Floor Breakout",
+        exceptions: []
+    }
+];
